@@ -1,0 +1,30 @@
+.container{
+  max-width: 1200px; /* Deixa com tamanho máximo em 1200 px */
+  margin: 0 auto; /* Contraliza */
+  min-height: 100vh; /* Mínimo de 100 relacionado ao tag pai */
+  background: #eee; /* Cor do background */
+  padding: 30px; /* Espaçamento interno */
+}
+
+.posts {
+  display: grid; /* Organiza por colunas e linhas */
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Deixa autómático com no mínimo de 280px ou 1 fr (1 Fraquemento) */
+  gap: 30px; /* Espaçamento de 30px */
+}
+
+.post{
+  background: #fff; /* Cor do background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  transition: transform 100ms ease-in-out; /* Tempo para a trasição */
+}
+
+.post:hover{
+  transform:scale(1.05); /* Almenta em 0,05 ao passar o mouse */
+}
+.post img {
+  max-width: 100%; /* Tamanho de 100% */
+}
+
+.post-content {
+  padding: 30px; /* Espaçamento de 30px */
+}
